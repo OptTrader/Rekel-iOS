@@ -24,6 +24,10 @@
 	<string>289372321186730</string>
 	<key>FacebookDisplayName</key>
 	<string>Rekel</string>
+	<key>LSApplicationQueriesSchemes</key>
+	<array>
+		<string>fbauth2</string>
+	</array>
 	<key>CFBundleURLTypes</key>
 	<array>
 		<dict>

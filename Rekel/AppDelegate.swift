@@ -9,7 +9,7 @@
 import UIKit
 import Parse
 import FBSDKCoreKit
-import FBSDKLoginKit
+// import FBSDKLoginKit
 import ParseFacebookUtilsV4
 
 @UIApplicationMain
@@ -30,7 +30,13 @@ class AppDelegate: UIResponder, UIApplicationDelegate
     // [Optional] Track statistics around application opens
     PFAnalytics.trackAppOpenedWithLaunchOptions(launchOptions)
     
-    return true
+    return FBSDKApplicationDelegate.sharedInstance().application(application, didFinishLaunchingWithOptions: launchOptions)
+    //return true
+  }
+  
+  func applicationDidBecomeActive(application: UIApplication) {
+    
+    FBSDKAppEvents.activateApp()
   }
 
   func application(application: UIApplication, openURL url: NSURL, sourceApplication: String?, annotation: AnyObject?) -> Bool {

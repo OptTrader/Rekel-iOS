@@ -6,4 +6,5 @@
 #import <MBProgressHUD/MBProgressHUD.h>
 #import <Parse/Parse.h>
 #import <ParseFacebookUtilsV4/PFFacebookUtils.h>
+#import <FBSDKCoreKit/FBSDKCoreKit.h>
 #import <ParseUI/ParseUI.h>
